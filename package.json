@@ -1,0 +1,25 @@
+{
+  "name": "keystone-6-railway-example",
+  "version": "1.0.0",
+  "description": "A simple example project showing how you might deploy Keystone 6 to Railway",
+  "main": "keystone.ts",
+  "repository": "git@github.com:keystonejs/keystone-6-railway-example.git",
+  "author": "John Molomby <john@thinkmill.com.au>",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">= 14.13"
+  },
+  "scripts": {
+    "dev": "keystone-next dev",
+    "start": "keystone-next start",
+    "build": "keystone-next build && keystone-next prisma migrate deploy"
+  },
+  "dependencies": {
+    "@keystone-next/auth": "^31.0.0",
+    "@keystone-next/keystone": "^24.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}

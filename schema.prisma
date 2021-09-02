@@ -1,0 +1,35 @@
+datasource postgresql {
+  url      = env("DATABASE_URL")
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "node_modules/.prisma/client"
+}
+
+model Task {
+  id           String            @id @default(cuid())
+  label        String?
+  priority     TaskPriorityType?
+  isComplete   Boolean?
+  assignedTo   Person?           @relation("Task_assignedTo", fields: [assignedToId], references: [id])
+  assignedToId String?           @map("assignedTo")
+  finishBy     DateTime?
+
+  @@index([assignedToId])
+}
+
+model Person {
+  id       String  @id @default(cuid())
+  name     String?
+  email    String? @unique
+  password String?
+  tasks    Task[]  @relation("Task_assignedTo")
+}
+
+enum TaskPriorityType {
+  low
+  medium
+  high
+}
