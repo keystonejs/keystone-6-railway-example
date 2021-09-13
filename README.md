@@ -62,7 +62,7 @@ This button kicks off a process that automatically creates many of the resources
 You don't need an existing Railway account or a credit card, all you need is a GitHub account.
 
 It's best to <kbd>Cmd⌘</kbd>-click the button so it opens in a new tab so.
-That'll let you easily refer back to this guild as you progress.
+That'll let you easily refer back to this guide as you progress.
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fkeystonejs%2Fkeystone-6-railway-example&plugins=postgresql&envs=SESSION_SECRET&optionalEnvs=SESSION_SECRET&SESSION_SECRETDesc=A+secret+key+for+verifying+the+integrity+of+signed+cookies&referralCode=keystonejs)
 
@@ -78,7 +78,7 @@ Don't be fooled by `⭐️ Server Ready on http://localhost:6067` line in the de
 The domain you're looking for will be in the format `${PROJECT_ID}.up.railway.app`.
 As the database is empty, when Keystone loads, you'll be prompted to set a username and password for the initial admin user account.
 
-And thats it – you've deploy a Keystone backend to Railway! ✨
+And thats it – you've deployed a Keystone backend to Railway! ✨
 
 If all you want to do is see Admin UI and play with items you can stop here.
 Railway offers [$5 of monthly usage for free](https://railway.app/pricing?referralCode=keystonejs) giving you plenty of time to poke around.
@@ -98,7 +98,7 @@ Ensure you have the following tools installed:
 If you're on MacOS and use [Homebrew](https://brew.sh), you can install all these at once:
 
 ```sh
-# Install the prerequisite tool
+# Install the prerequisite tools
 brew install git node railwayapp/railway/railway
 ```
 
@@ -110,6 +110,8 @@ Once the prerequisites are installed we need to download the app code.
 Before the build and deployment process in step 1, Railway copied the code for this app to your own GitHub account.
 Open that repo in your browser then clone it to your local machine and switch your working directory to the project root.
 It's important to use the repo in _your_ GitHub account (not the original in the `keystonejs` org) as yours has hooks setup to trigger redeploys.
+
+> This didn't work for me, I don't have any public SSH keys in your GitHub account `git@github.com: Permission denied (publickey).`
 
 ```sh
 # Replace "molomby" and "my-keystone6-railway-app" with your GitHub username and the repo name you entered earlier
