@@ -107,9 +107,12 @@ If you're on a different platform, click though the links above and follow the r
 ### 3. Local Development
 
 Once the prerequisites are installed we need to download the app code.
-Before the build and deployment process in step 1, Railway copied the code for this app to your own GitHub account.
-Open that repo in your browser then clone it to your local machine and switch your working directory to the project root.
-It's important to use the repo in _your_ GitHub account (not the original in the `keystonejs` org) as yours has hooks setup to trigger redeploys.
+Early in step 1, Railway copied the code for this app to a new repo in your _own_ GitHub account.
+It's important we use that new repo in this step (not the original in the `keystonejs` org) as the new repo has the hooks you'll use to trigger redeployments later on.
+
+Open the new GitHub repo in your browser, then clone it to your local machine and switch your working directory to the project root.
+Assuming you've [added an SSH key](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+to your GitHub account, the commands you'll need will looks something like this:
 
 ```sh
 # Replace "molomby" and "my-keystone6-railway-app" with your GitHub username and the repo name you entered earlier
