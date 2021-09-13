@@ -111,8 +111,6 @@ Before the build and deployment process in step 1, Railway copied the code for t
 Open that repo in your browser then clone it to your local machine and switch your working directory to the project root.
 It's important to use the repo in _your_ GitHub account (not the original in the `keystonejs` org) as yours has hooks setup to trigger redeploys.
 
-> This didn't work for me, I don't have any public SSH keys in your GitHub account `git@github.com: Permission denied (publickey).`
-
 ```sh
 # Replace "molomby" and "my-keystone6-railway-app" with your GitHub username and the repo name you entered earlier
 git clone git@github.com:molomby/my-keystone6-railway-app.git
