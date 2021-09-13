@@ -99,7 +99,7 @@ If you're on MacOS and use [Homebrew](https://brew.sh), you can install all thes
 
 ```sh
 # Install the prerequisite tools
-brew install git node railwayapp/railway/railway
+brew install git node yarn railwayapp/railway/railway
 ```
 
 If you're on a different platform, click though the links above and follow the relevant instructions.
@@ -259,7 +259,7 @@ There are many strategies for deploying and coordinating app updates and migrati
 The approach we've taken here is simple and works sufficiently well for this infrastructure setup but your app may have different needs.
 See the [CLI docs](https://keystonejs.com/docs/guides/cli) for the underlying commands used.
 
-## What's Next
+## Next Steps
 
 For ideas on what's possible with Keystone,
 see the [guides](https://keystonejs.com/docs/guides) section of the website,
