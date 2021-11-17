@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": ">= 14.13"
+    "node": "^14.15 || ^16.13"
   },
   "scripts": {
     "dev": "keystone-next dev",
@@ -16,10 +16,10 @@
     "build": "keystone-next build && keystone-next prisma migrate deploy"
   },
   "dependencies": {
-    "@keystone-next/auth": "^31.0.0",
-    "@keystone-next/keystone": "^24.0.1"
+    "@keystone-next/auth": "^36.0.0",
+    "@keystone-next/keystone": "^28.0.0"
   },
   "devDependencies": {
-    "typescript": "^4.3.5"
+    "typescript": "^4.4.4"
   }
 }

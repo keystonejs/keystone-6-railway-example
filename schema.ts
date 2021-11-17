@@ -1,10 +1,17 @@
 // Code copied (with some modifications) from the Keystone 6 "with-auth" example
 // See.. https://github.com/keystonejs/keystone/tree/master/examples/with-auth
 
-import { createSchema, list } from '@keystone-next/keystone/schema';
-import { checkbox, password, relationship, text, timestamp, select } from '@keystone-next/fields';
+import { list } from '@keystone-next/keystone';
+import {
+  checkbox,
+  password,
+  relationship,
+  text,
+  timestamp,
+  select,
+} from '@keystone-next/keystone/fields';
 
-export const lists = createSchema({
+export const lists = {
   Task: list({
     fields: {
       label: text({ isRequired: true }),
@@ -27,7 +34,7 @@ export const lists = createSchema({
       // Added an email and password pair to be used with authentication
       // The email address is going to be used as the identity field, so it's
       // important that we set both isRequired and isUnique
-      email: text({ isRequired: true, isUnique: true }),
+      email: text({ isRequired: true, isUnique: true, isIndexed: 'unique' }),
       // The password field stores a hash of the supplied password, and
       // we want to ensure that all people have a password set, so we use
       // the isRequired flag.
@@ -35,4 +42,4 @@ export const lists = createSchema({
       tasks: relationship({ ref: 'Task.assignedTo', many: true }),
     },
   }),
-});
+};
