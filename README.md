@@ -3,6 +3,8 @@
 A simple example project showing how one might develop and deploy a [KeystoneJS 6](https://keystonejs.com)
 backend using [Railway](https://railway.app?referralCode=keystonejs).
 
+![keystone-railway 5x](https://user-images.githubusercontent.com/6447754/133543067-78333e71-a2d4-4311-9d3d-5466d5457140.png)
+
 ## Introduction
 
 [Railway](https://railway.app?referralCode=keystonejs) is an interesting new hosting provider.
