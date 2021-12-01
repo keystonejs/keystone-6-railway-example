@@ -11,15 +11,15 @@
     "node": "^14.15 || ^16.13"
   },
   "scripts": {
-    "dev": "keystone-next dev",
-    "start": "keystone-next start",
-    "build": "keystone-next build && keystone-next prisma migrate deploy"
+    "dev": "keystone dev",
+    "start": "keystone start",
+    "build": "keystone build && keystone prisma migrate deploy"
   },
   "dependencies": {
-    "@keystone-next/auth": "^36.0.0",
-    "@keystone-next/keystone": "^28.0.0"
+    "@keystone-6/auth": "^1.0.0",
+    "@keystone-6/core": "^1.0.0"
   },
   "devDependencies": {
-    "typescript": "^4.4.4"
+    "typescript": "^4.5.2"
   }
 }

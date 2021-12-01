@@ -1,9 +1,9 @@
 // Code copied (with some modifications) from the Keystone 6 "with-auth" example
 // See.. https://github.com/keystonejs/keystone/tree/master/examples/with-auth
 
-import { config } from '@keystone-next/keystone';
-import { statelessSessions } from '@keystone-next/keystone/session';
-import { createAuth } from '@keystone-next/auth';
+import { config } from '@keystone-6/core';
+import { statelessSessions } from '@keystone-6/core/session';
+import { createAuth } from '@keystone-6/auth';
 import { lists } from './schema';
 import { PORT, DATABASE_URL, SESSION_MAX_AGE, SESSION_SECRET } from './config';
 

@@ -1,15 +1,8 @@
 // Code copied (with some modifications) from the Keystone 6 "with-auth" example
 // See.. https://github.com/keystonejs/keystone/tree/master/examples/with-auth
 
-import { list } from '@keystone-next/keystone';
-import {
-  checkbox,
-  password,
-  relationship,
-  text,
-  timestamp,
-  select,
-} from '@keystone-next/keystone/fields';
+import { list } from '@keystone-6/core';
+import { checkbox, password, relationship, text, timestamp, select } from '@keystone-6/core/fields';
 
 export const lists = {
   Task: list({
